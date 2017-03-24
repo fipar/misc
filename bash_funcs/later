@@ -1,0 +1,10 @@
+# goal: defer execution in bg. 
+# for example, if playing with firewalls rules via ssh, you can: 
+# later 120 iptables -F INPUT &
+# to flush the INPUT table in 120 seconds, in case one of the rules you try causes you to lose access. 
+later()
+{
+	sleep $1
+	shift
+	eval $*
+}

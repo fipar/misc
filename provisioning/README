@@ -1,0 +1,1 @@
+Code to help with provisioning. Mostly aimed at test environments in which Ansible/Chef/Puppet/You name it seems like overkill to me. 
